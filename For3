@@ -1,0 +1,27 @@
+package For;
+
+
+
+import java.util.Scanner;
+
+
+
+public class For3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("A ni kriting: ");
+        int a = scanner.nextInt();
+        System.out.println("B ni kriting: ");
+        int b = scanner.nextInt();
+
+
+
+int count =0;
+        for (int i = b; i >= a; i--) {
+            System.out.println("Sonlar kamayish tartibida: "+i);
+        }
+
+    }
+}
+
