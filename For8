@@ -1,0 +1,26 @@
+package For;
+
+import java.util.Scanner;
+
+
+
+public class For8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("A ni kriting: ");
+        int a = scanner.nextInt();
+        System.out.println("B ni kriting: ");
+        int b = scanner.nextInt();
+
+        int sum = 1;
+        for (int i = a; i <= b; i++) {
+            sum*=i;
+
+        }
+        System.out.println("A va B orasidagi sonlar yig'indisi:"+sum);
+
+    }
+}
+
+
