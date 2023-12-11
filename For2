@@ -8,16 +8,22 @@ public class For2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("n ni kiriting : ");
-        int a = scanner.nextInt();
+        System.out.println("A ni kriting: ");
+                int a = scanner.nextInt();
+        System.out.println("B ni kriting: ");
+                int b = scanner.nextInt();
 
-        System.out.print("k ni kiriting: ");
-        int b = scanner.nextInt();
+                System.out.println("a va b orasidagi barcha butun sonlar:");
+                int count = 0;
 
+                for (int i = a; i <= b; i++) {
+                    System.out.println(i);
+                    count++;
+                }
 
-        for (int i = a; i <= b; i++) {
-            System.out.println(i);
+                System.out.println("Chiqarilgan sonlar soni: " + count);
+                 System.out.println("A:"+a);
+                System.out.println("B:"+b);
+            }
         }
-    }
-}
 
