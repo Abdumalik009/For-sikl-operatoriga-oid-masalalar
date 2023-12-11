@@ -1,0 +1,23 @@
+package For;
+
+import java.util.Scanner;
+
+public class For5 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+
+            System.out.print("Konfet narxini kiriting (haqiqiy son): ");
+            double a = scanner.nextDouble();
+
+
+            for (double i = 1.2; i <= 2.0; i += 0.1) {
+                double sum = a * i;
+                System.out.println(i + " kg konfet narxi: " + sum + " so'm");
+            }
+
+        }
+    }
+
+
+
