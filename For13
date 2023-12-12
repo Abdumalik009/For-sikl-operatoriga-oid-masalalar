@@ -1,0 +1,29 @@
+package For;
+
+import java.util.Scanner;
+
+public class For13 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        if (n > 0) {
+            double s = 0;
+
+            for (int i = 1; i <= n; i++) {
+                if (i % 2 == 1) {
+                    s += (1.0 + i * 0.1);
+                } else {
+                    s -= (1.0 + i * 0.1);
+                }
+            }
+
+            System.out.println("Natija (S) = " + s);
+        } else {
+            System.out.println("Noto'g'ri qiymat. n > 0 bo'lishi kerak.");
+        }
+
+    }
+}
