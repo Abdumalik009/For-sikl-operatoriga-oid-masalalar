@@ -1,0 +1,27 @@
+package For;
+
+import java.util.Scanner;
+
+
+public class For11 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        if (n > 0) {
+            int sum = 0;
+
+            for (int i = 0; i <= n; i++) {
+                sum += Math.pow((n + i), 2);
+            }
+
+            System.out.println("Natija= " + sum);
+        } else {
+            System.out.println("Noto'g'ri qiymat. n > 0 bo'lishi kerak.");
+        }
+
+        scanner.close();
+    }
+}
