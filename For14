@@ -1,0 +1,27 @@
+package For;
+
+import java.util.Scanner;
+
+public class For14 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = scanner.nextInt();
+
+        if (n > 0) {
+            int nSquared = 0;
+
+            for (int i = 1; i <= n; i++) {
+                nSquared += (2 * i - 1);
+            }
+
+            System.out.println("Natija (n^2) = " + nSquared);
+        } else {
+            System.out.println("Noto'g'ri qiymat. n > 0 bo'lishi kerak.");
+        }
+
+        scanner.close();
+    }
+}
+
