@@ -1,0 +1,31 @@
+package For;
+
+import java.util.Scanner;
+
+public class For18 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        System.out.print("a ni kiriting: ");
+        double a = input.nextDouble();
+
+        
+        double sum = 0;
+        System.out.println("Darajalar:");
+
+        for (int i = 0; i <= n; i++) {
+            double daraja = Math.pow(-1, i) * Math.pow(a, i);
+            System.out.print(daraja + " ");
+            sum += daraja;
+        }
+
+        
+        System.out.println("Yig'indi: " + sum);
+        
+        input.close();
+    }
+}
