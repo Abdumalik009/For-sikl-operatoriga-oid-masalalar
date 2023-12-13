@@ -1,0 +1,27 @@
+package For;
+
+import java.util.Scanner;
+
+public class For22 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Sonni kriting: ");
+        int n = input.nextInt();
+        System.out.print("haqiqiy son kriting: ");
+        int x = input.nextInt();
+
+        int sum = 1;
+        int sum2 =0;
+        int sum3=x;
+        for (int i = 1; i <= n; i++) {
+            sum *= i;
+            sum3/=sum;
+            sum2+=sum3;
+        }
+
+        System.out.println("Faktoriali yig'indisi: " + sum2);
+
+    }
+}
