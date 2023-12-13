@@ -1,0 +1,28 @@
+package For;
+
+import java.util.Scanner;
+
+public class For28 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        System.out.print("x ni kiriting (|x| < 1): ");
+        double x = input.nextDouble();
+        
+        double yigindi = 1;
+        double sign = -1;
+        double term = 1;
+
+        for (int i = 1; i <= n; i++) {
+            term *= (2 * i - 1) * x / (2 * i);
+            yigindi += sign * term;
+            sign *= -1;
+        }
+
+        System.out.println("Natija: " + yigindi);
+
+    }
+}
