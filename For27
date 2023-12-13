@@ -1,0 +1,29 @@
+package For;
+
+import java.util.Scanner;
+
+public class For27 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        System.out.print("x ni kiriting (|x| < 1): ");
+        double x = input.nextDouble();
+
+        double yigindi = 0;
+        double factorialProduct = 1;
+
+        for (int i = 0; i <= n; i++) {
+            double term = Math.pow(x, 2 * i + 1) / factorialProduct;
+            yigindi += term;
+            factorialProduct *= (2 * i + 2) * (2 * i + 3);
+        }
+
+        System.out.println("Natija: " + yigindi);
+
+        input.close();
+    }
+}
+
