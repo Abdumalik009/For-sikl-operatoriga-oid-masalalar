@@ -25,7 +25,5 @@ public class For18 {
 
         
         System.out.println("Yig'indi: " + sum);
-        
-        input.close();
-    }
+            }
 }
