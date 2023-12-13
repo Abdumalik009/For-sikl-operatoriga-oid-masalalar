@@ -1,0 +1,25 @@
+package For;
+
+import java.util.Scanner;
+
+public class For25 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        System.out.print("x ni kiriting (|x| < 1): ");
+        double x = input.nextDouble();
+
+        double yigindi = 0;
+
+        for (int i = 1; i <= n; i++) {
+            double term = Math.pow(-1, i - 1) * Math.pow(x, i) / i;
+            yigindi += term;
+        }
+
+        System.out.println("Natija: " + yigindi);
+    }
+}
+
