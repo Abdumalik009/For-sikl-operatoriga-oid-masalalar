@@ -1,0 +1,16 @@
+package For;
+
+import java.util.Scanner;
+
+public class For15 {
+    public static void main(String[] args) {
+        Scanner scanner =new Scanner(System.in);
+        System.out.print("Sonni kriting: ");
+        int a = scanner.nextInt();
+        System.out.print("Sonning darajasini kriting: ");
+        int n = scanner.nextInt();
+
+        int sum = (int) Math.pow(a,n);
+        System.out.println("Natija: "+sum);
+    }
+}
