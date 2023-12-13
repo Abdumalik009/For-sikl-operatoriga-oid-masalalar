@@ -1,0 +1,23 @@
+package For;
+
+import java.util.Scanner;
+
+public class For20 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.print("Faktorialni topish uchun n ni kiriting: ");
+        int n = input.nextInt();
+
+        int sum = 1;
+        int sum2 =0;
+        for (int i = 1; i <= n; i++) {
+            sum *= i;
+            sum2+=sum;
+        }
+
+        System.out.println("Faktoriali yig'indisi: " + sum2);
+
+    }
+}
