@@ -1,0 +1,27 @@
+package For;
+
+import java.util.Scanner;
+
+public class For26 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        System.out.print("x ni kiriting (|x| < 1): ");
+        double x = input.nextDouble();
+
+        double yigindi = 0;
+
+        for (int i = 0; i <= n; i++) {
+            double term = Math.pow(-1, i) * Math.pow(x, 2 * i + 1) / (2 * i + 1);
+            yigindi += term;
+        }
+
+        
+        System.out.println("Natija: " + yigindi);
+
+        input.close();
+    }
+}
