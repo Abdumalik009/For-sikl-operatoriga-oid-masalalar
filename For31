@@ -1,0 +1,30 @@
+package For;
+
+import java.util.Scanner;
+
+public class For31 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("N ni kiriting (N > 0): ");
+        int n = input.nextInt();
+
+        if (n > 0) {
+            double result = calculateSequence(n);
+            System.out.println("A" + n + " ning qiymati: " + result);
+        } else {
+            System.out.println("N > 0 bo'lishi kerak!");
+        }
+    }
+
+    public static double calculateSequence(int n) {
+        double a = 2;
+
+        for (int i = 1; i <= n; i++) {
+            a = 2 + 1 / a;
+        }
+
+        return a;
+    }
+}
+
