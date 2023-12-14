@@ -1,0 +1,26 @@
+package For;
+
+
+
+import java.util.Scanner;
+
+public class For36 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("n ni kiriting (n > 0): ");
+        int n = input.nextInt();
+
+        
+
+        double sum = 0;
+
+        for (int i = 0; i <= n; i++) {
+            double daraja = Math.pow(i, i);
+            sum += daraja;
+        }
+
+        System.out.println("Yig'indi: " + sum);
+
+    }
+}
