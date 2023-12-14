@@ -1,0 +1,23 @@
+package For;
+
+import java.util.Scanner;
+
+public class For40 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("A ni kiriting: ");
+        int a = input.nextInt();
+        System.out.print("B ni kiriting: ");
+        int b = input.nextInt();
+        int sum =a-b;
+
+        for (int i = 1; i <= sum; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.println(i+1);
+            }
+        }
+    }
+
+
+}
