@@ -1,0 +1,34 @@
+package For;
+
+import java.util.Scanner;
+
+public class For34 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("N ni kiriting (N > 1): ");
+        int n = input.nextInt();
+
+        if (n > 1) {
+            System.out.println("Ketma-ketlikning dastlabki " + n + " ta hadi:");
+            printSequence(n);
+        } else {
+            System.out.println("N > 1 bo'lishi kerak!");
+        }
+    }
+
+    public static void printSequence(int n) {
+        int[] sequence = new int[n];
+        sequence[0] = 1;
+        sequence[1] = 2;
+
+        for (int k = 2; k < n; k++) {
+            sequence[k] = (sequence[k - 2] + 2 * sequence[k - 1]) / 3;
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(sequence[i] + " ");
+        }
+    }
+}
+
