@@ -11,13 +11,13 @@ public class For36 {
         System.out.print("n ni kiriting (n > 0): ");
         int n = input.nextInt();
 
-        System.out.print("a ni kiriting: ");
+        System.out.print("K ni kiriting: ");
         double a = input.nextDouble();
 
         double sum = 0;
 
         for (int i = 0; i <= n; i++) {
-            double daraja = Math.pow(a, i);
+            double daraja = Math.pow(i, a);
             sum += daraja;
         }
 
