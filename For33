@@ -1,0 +1,33 @@
+package For;
+
+import java.util.Scanner;
+
+public class For33 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("N ni kiriting (N > 1): ");
+        int n = input.nextInt();
+
+        if (n > 1) {
+            System.out.println("Fibonachchi ketma-ketlikning dastlabki " + n + " ta hadi:");
+            Fibonachi(n);
+        } else {
+            System.out.println("N > 1 bo'lishi kerak!");
+        }
+    }
+
+    public static void Fibonachi(int n) {
+        int[] fibonachi = new int[n];
+        fibonachi[0] = 1;
+        fibonachi[1] = 1;
+
+        for (int k = 2; k < n; k++) {
+            fibonachi[k] = fibonachi[k - 2] + fibonachi[k - 1];
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonachi[i] + " ");
+        }
+    }
+}
