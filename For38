@@ -1,0 +1,25 @@
+package For;
+
+import java.util.Scanner;
+
+public class For38 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("N ni kiriting: ");
+        int n = input.nextInt();
+
+        int sum = calculateSum(n);
+        System.out.println("Yig'indi: " + sum);
+    }
+
+    public static int calculateSum(int n) {
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            sum += (int) (Math.pow(10, n - i) * i);
+        }
+
+        return sum;
+    }
+}
